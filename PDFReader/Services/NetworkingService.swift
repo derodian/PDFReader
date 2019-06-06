@@ -8,6 +8,11 @@
 
 import Foundation
 
+enum Result <T>{
+    case Success(T)
+    case Error(String)
+}
+
 class NetworkingService {
     
     // Private init()
@@ -49,5 +54,36 @@ class NetworkingService {
             }
         }
         task.resume()
+    }
+    
+    func getDataWith(completion: @escaping (Result<[[String: AnyObject]]>) -> Void) {
+        guard let url = URL(string: fetchUrl) else {
+            return completion(.Error("Invalid URL, we can't get data."))
+        }
+        
+        URLSession.shared.dataTask(with: url) { (data, response, error) in
+            guard error == nil else {
+                return completion(.Error(error!.localizedDescription))
+            }
+            guard let data = data else {
+                return completion(.Error(error?.localizedDescription ?? "There are no new Files to show"))
+            }
+            
+            do {
+                if let json = try JSONSerialization.jsonObject(with: data, options: [.mutableContainers]) as? [String: AnyObject] {
+                    
+                    // Fetch JSON data with dictionary key 'files'
+                    guard let filesJsonArray = json["files"] as? [[String: AnyObject]] else {
+                        return completion(.Error(error?.localizedDescription ?? "There are no new Files to show"))
+                    }
+                    
+                    DispatchQueue.main.async {
+                        completion(.Success(filesJsonArray))
+                    }
+                }
+            } catch let error {
+                return completion(.Error(error.localizedDescription))
+            }
+        }.resume()
     }
 }

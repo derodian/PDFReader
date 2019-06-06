@@ -64,4 +64,44 @@ class CoreDataService {
             }
         }
     }
+    
+    // Helper method that accepts a dictionary(jsondata) and returns a NSManagedObject
+    func createPDFFilesEntityFrom(dictionary: [String: AnyObject]) -> NSManagedObject? {
+        let context = CoreDataService.instance.persistentContainer.viewContext
+        if let pdfFileEntity = NSEntityDescription.insertNewObject(forEntityName: "PDFFiles", into: context) as? PDFFiles {
+            pdfFileEntity.id = dictionary["id"] as! Int32
+            pdfFileEntity.name = dictionary["name"] as? String
+            pdfFileEntity.fileurl = dictionary["fileurl"] as? String
+            pdfFileEntity.uploaddate = dictionary["uploaddate"] as? String
+            let index = dictionary["id"] as! Int - 1
+            pdfFileEntity.index = Int32(index)
+            pdfFileEntity.downloaded = false
+            return pdfFileEntity
+        }
+        return nil
+    }
+    
+    // Save json data to CoreData
+    func saveInCoreDataWith(array: [[String: AnyObject]]) {
+        _ = array.map{self.createPDFFilesEntityFrom(dictionary: $0)}
+        
+        // Can also use forloop to save
+        //        for dict in array {
+        //            _ = self.createPDFFilesEntityFrom(dictionary: dict)
+        //        }
+        
+        do {
+            try CoreDataService.instance.persistentContainer.viewContext.save()
+        } catch let error {
+            print(error.localizedDescription)
+        }
+        
+    }
+    
+    // Print filepath of app's Library Directory
+    func applicationDocumentsDirectory() {
+        if let url = FileManager.default.urls(for: .libraryDirectory, in: .userDomainMask).last {
+            print(url.absoluteString)
+        }
+    }
 }

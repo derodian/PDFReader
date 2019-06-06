@@ -77,8 +77,30 @@ class PDFListVC: UIViewController {
         downloadService.downloadsSession = downloadsSession
         
         self.title = "BHAJAN"
-        getData()
+//        getData()
+        NetworkingService.instance.getDataWith { (result) in
+            print(result)
+            switch result {
+            case .Success(let data):
+                CoreDataService.instance.saveInCoreDataWith(array: data)
+                print(data)
+            case .Error(let message):
+                DispatchQueue.main.async {
+                    self.showAlertWith(title: "Error", message: message)
+                }
+            }
+        }
         
+    }
+    
+    // Show Alert if anything goes wrong
+    func showAlertWith(title: String, message: String, style: UIAlertController.Style = .alert) {
+        let alertController = UIAlertController(title: title, message: message, preferredStyle: style)
+        let action = UIAlertAction(title: title, style: .default) { (action) in
+            self.dismiss(animated: true, completion: nil)
+        }
+        alertController.addAction(action)
+        self.present(alertController, animated: true, completion: nil)
     }
     
     // Create a lazy session so that it loads after VC is initialized so that self can be passed as delegate parameter of the session

@@ -59,13 +59,12 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0A010B5522A8B724002F57BC /* CoreData */ = {
+		0A010B5C22A8CD04002F57BC /* Helper */ = {
 			isa = PBXGroup;
 			children = (
-				0A010B5822A8C79A002F57BC /* PDFFiles+CoreDataClass.swift */,
-				0A010B5922A8C79A002F57BC /* PDFFiles+CoreDataProperties.swift */,
+				0AE2B7AA228D1BBF00DC46DA /* Constant.swift */,
 			);
-			path = CoreData;
+			path = Helper;
 			sourceTree = "<group>";
 		};
 		0AE2B783228D19F000DC46DA = {
@@ -87,8 +86,7 @@
 		0AE2B78E228D19F000DC46DA /* PDFReader */ = {
 			isa = PBXGroup;
 			children = (
-				0A010B5522A8B724002F57BC /* CoreData */,
-				0AE2B7AA228D1BBF00DC46DA /* Constant.swift */,
+				0A010B5C22A8CD04002F57BC /* Helper */,
 				0AE2B7A9228D1A9400DC46DA /* Services */,
 				0AE2B7A7228D1A7D00DC46DA /* Model */,
 				0AE2B7A6228D1A7600DC46DA /* View */,
@@ -114,6 +112,8 @@
 		0AE2B7A7228D1A7D00DC46DA /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				0A010B5822A8C79A002F57BC /* PDFFiles+CoreDataClass.swift */,
+				0A010B5922A8C79A002F57BC /* PDFFiles+CoreDataProperties.swift */,
 				0AE2B7B22293C0B100DC46DA /* Bhajan.swift */,
 				0AE2B7B42293C15100DC46DA /* Download.swift */,
 			);
