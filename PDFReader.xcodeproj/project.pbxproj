@@ -7,23 +7,45 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A010B5722A8B74C002F57BC /* CoreDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A010B5622A8B74C002F57BC /* CoreDataService.swift */; };
+		0A010B5A22A8C79A002F57BC /* PDFFiles+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A010B5822A8C79A002F57BC /* PDFFiles+CoreDataClass.swift */; };
+		0A010B5B22A8C79A002F57BC /* PDFFiles+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A010B5922A8C79A002F57BC /* PDFFiles+CoreDataProperties.swift */; };
 		0AE2B790228D19F000DC46DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE2B78F228D19F000DC46DA /* AppDelegate.swift */; };
-		0AE2B792228D19F000DC46DA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE2B791228D19F000DC46DA /* ViewController.swift */; };
 		0AE2B795228D19F000DC46DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AE2B793228D19F000DC46DA /* Main.storyboard */; };
 		0AE2B798228D19F000DC46DA /* PDFReader.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0AE2B796228D19F000DC46DA /* PDFReader.xcdatamodeld */; };
 		0AE2B79A228D19F200DC46DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AE2B799228D19F200DC46DA /* Assets.xcassets */; };
 		0AE2B79D228D19F200DC46DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AE2B79B228D19F200DC46DA /* LaunchScreen.storyboard */; };
+		0AE2B7A5228D1A6D00DC46DA /* PDFListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE2B7A4228D1A6D00DC46DA /* PDFListVC.swift */; };
+		0AE2B7AB228D1BBF00DC46DA /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE2B7AA228D1BBF00DC46DA /* Constant.swift */; };
+		0AE2B7AD228D1CA700DC46DA /* PDFListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE2B7AC228D1CA700DC46DA /* PDFListCell.swift */; };
+		0AE2B7B12293BFDA00DC46DA /* NetworkingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE2B7B02293BFDA00DC46DA /* NetworkingService.swift */; };
+		0AE2B7B32293C0B100DC46DA /* Bhajan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE2B7B22293C0B100DC46DA /* Bhajan.swift */; };
+		0AE2B7B52293C15100DC46DA /* Download.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE2B7B42293C15100DC46DA /* Download.swift */; };
+		0AE2B7B72293C59800DC46DA /* DownloadService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE2B7B62293C59800DC46DA /* DownloadService.swift */; };
+		0AE2B7B92293C94300DC46DA /* PDFListVC+URLSessionDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE2B7B82293C94300DC46DA /* PDFListVC+URLSessionDelegates.swift */; };
+		0AE2B7BB229522FD00DC46DA /* PDFVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE2B7BA229522FD00DC46DA /* PDFVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A010B5622A8B74C002F57BC /* CoreDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataService.swift; sourceTree = "<group>"; };
+		0A010B5822A8C79A002F57BC /* PDFFiles+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PDFFiles+CoreDataClass.swift"; sourceTree = "<group>"; };
+		0A010B5922A8C79A002F57BC /* PDFFiles+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PDFFiles+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		0AE2B78C228D19F000DC46DA /* PDFReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PDFReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AE2B78F228D19F000DC46DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0AE2B791228D19F000DC46DA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0AE2B794228D19F000DC46DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0AE2B797228D19F000DC46DA /* PDFReader.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PDFReader.xcdatamodel; sourceTree = "<group>"; };
 		0AE2B799228D19F200DC46DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0AE2B79C228D19F200DC46DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0AE2B79E228D19F200DC46DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0AE2B7A4228D1A6D00DC46DA /* PDFListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFListVC.swift; sourceTree = "<group>"; };
+		0AE2B7AA228D1BBF00DC46DA /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		0AE2B7AC228D1CA700DC46DA /* PDFListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFListCell.swift; sourceTree = "<group>"; };
+		0AE2B7B02293BFDA00DC46DA /* NetworkingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingService.swift; sourceTree = "<group>"; };
+		0AE2B7B22293C0B100DC46DA /* Bhajan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bhajan.swift; sourceTree = "<group>"; };
+		0AE2B7B42293C15100DC46DA /* Download.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Download.swift; sourceTree = "<group>"; };
+		0AE2B7B62293C59800DC46DA /* DownloadService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadService.swift; sourceTree = "<group>"; };
+		0AE2B7B82293C94300DC46DA /* PDFListVC+URLSessionDelegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PDFListVC+URLSessionDelegates.swift"; sourceTree = "<group>"; };
+		0AE2B7BA229522FD00DC46DA /* PDFVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +59,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A010B5522A8B724002F57BC /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				0A010B5822A8C79A002F57BC /* PDFFiles+CoreDataClass.swift */,
+				0A010B5922A8C79A002F57BC /* PDFFiles+CoreDataProperties.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
 		0AE2B783228D19F000DC46DA = {
 			isa = PBXGroup;
 			children = (
@@ -56,8 +87,13 @@
 		0AE2B78E228D19F000DC46DA /* PDFReader */ = {
 			isa = PBXGroup;
 			children = (
+				0A010B5522A8B724002F57BC /* CoreData */,
+				0AE2B7AA228D1BBF00DC46DA /* Constant.swift */,
+				0AE2B7A9228D1A9400DC46DA /* Services */,
+				0AE2B7A7228D1A7D00DC46DA /* Model */,
+				0AE2B7A6228D1A7600DC46DA /* View */,
+				0AE2B7A8228D1A8600DC46DA /* Controller */,
 				0AE2B78F228D19F000DC46DA /* AppDelegate.swift */,
-				0AE2B791228D19F000DC46DA /* ViewController.swift */,
 				0AE2B793228D19F000DC46DA /* Main.storyboard */,
 				0AE2B799228D19F200DC46DA /* Assets.xcassets */,
 				0AE2B79B228D19F200DC46DA /* LaunchScreen.storyboard */,
@@ -65,6 +101,43 @@
 				0AE2B796228D19F000DC46DA /* PDFReader.xcdatamodeld */,
 			);
 			path = PDFReader;
+			sourceTree = "<group>";
+		};
+		0AE2B7A6228D1A7600DC46DA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0AE2B7AC228D1CA700DC46DA /* PDFListCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0AE2B7A7228D1A7D00DC46DA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0AE2B7B22293C0B100DC46DA /* Bhajan.swift */,
+				0AE2B7B42293C15100DC46DA /* Download.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0AE2B7A8228D1A8600DC46DA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0AE2B7A4228D1A6D00DC46DA /* PDFListVC.swift */,
+				0AE2B7B82293C94300DC46DA /* PDFListVC+URLSessionDelegates.swift */,
+				0AE2B7BA229522FD00DC46DA /* PDFVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		0AE2B7A9228D1A9400DC46DA /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				0AE2B7B02293BFDA00DC46DA /* NetworkingService.swift */,
+				0AE2B7B62293C59800DC46DA /* DownloadService.swift */,
+				0A010B5622A8B74C002F57BC /* CoreDataService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +211,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A010B5722A8B74C002F57BC /* CoreDataService.swift in Sources */,
 				0AE2B798228D19F000DC46DA /* PDFReader.xcdatamodeld in Sources */,
-				0AE2B792228D19F000DC46DA /* ViewController.swift in Sources */,
+				0AE2B7B52293C15100DC46DA /* Download.swift in Sources */,
+				0AE2B7A5228D1A6D00DC46DA /* PDFListVC.swift in Sources */,
 				0AE2B790228D19F000DC46DA /* AppDelegate.swift in Sources */,
+				0AE2B7B12293BFDA00DC46DA /* NetworkingService.swift in Sources */,
+				0A010B5B22A8C79A002F57BC /* PDFFiles+CoreDataProperties.swift in Sources */,
+				0AE2B7BB229522FD00DC46DA /* PDFVC.swift in Sources */,
+				0AE2B7B92293C94300DC46DA /* PDFListVC+URLSessionDelegates.swift in Sources */,
+				0AE2B7AB228D1BBF00DC46DA /* Constant.swift in Sources */,
+				0AE2B7AD228D1CA700DC46DA /* PDFListCell.swift in Sources */,
+				0A010B5A22A8C79A002F57BC /* PDFFiles+CoreDataClass.swift in Sources */,
+				0AE2B7B32293C0B100DC46DA /* Bhajan.swift in Sources */,
+				0AE2B7B72293C59800DC46DA /* DownloadService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
